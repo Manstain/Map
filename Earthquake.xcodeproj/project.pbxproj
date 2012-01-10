@@ -13,8 +13,11 @@
 		E9969E3F14BCA07700F4C861 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9969E3D14BCA07700F4C861 /* InfoPlist.strings */; };
 		E9969E4114BCA07700F4C861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E4014BCA07700F4C861 /* main.m */; };
 		E9969E4514BCA07700F4C861 /* myAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E4414BCA07700F4C861 /* myAppDelegate.m */; };
-		E9969E4814BCA07700F4C861 /* myViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E4714BCA07700F4C861 /* myViewController.m */; };
-		E9969E4B14BCA07700F4C861 /* myViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9969E4914BCA07700F4C861 /* myViewController.xib */; };
+		E9969E4814BCA07700F4C861 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E4714BCA07700F4C861 /* RootController.m */; };
+		E9969E4B14BCA07700F4C861 /* RootController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9969E4914BCA07700F4C861 /* RootController.xib */; };
+		E9969E5314BCA18700F4C861 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9969E5214BCA18700F4C861 /* CoreLocation.framework */; };
+		E9969E5514BCA19400F4C861 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9969E5414BCA19400F4C861 /* MapKit.framework */; };
+		E9969E5C14BCC10F00F4C861 /* EarthquakeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E5B14BCC10F00F4C861 /* EarthquakeEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,19 @@
 		E9969E3414BCA07700F4C861 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E9969E3614BCA07700F4C861 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9969E3814BCA07700F4C861 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E9969E3C14BCA07700F4C861 /* Earthquake-Info.plist */ = {isa = PBXFileReference; path = "Earthquake-Info.plist"; sourceTree = "<group>"; };
+		E9969E3C14BCA07700F4C861 /* Earthquake-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Earthquake-Info.plist"; sourceTree = "<group>"; };
 		E9969E3E14BCA07700F4C861 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9969E4014BCA07700F4C861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E9969E4214BCA07700F4C861 /* Earthquake-Prefix.pch */ = {isa = PBXFileReference; path = "Earthquake-Prefix.pch"; sourceTree = "<group>"; };
-		E9969E4314BCA07700F4C861 /* myAppDelegate.h */ = {isa = PBXFileReference; path = myAppDelegate.h; sourceTree = "<group>"; };
+		E9969E4214BCA07700F4C861 /* Earthquake-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Earthquake-Prefix.pch"; sourceTree = "<group>"; };
+		E9969E4314BCA07700F4C861 /* myAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myAppDelegate.h; sourceTree = "<group>"; };
 		E9969E4414BCA07700F4C861 /* myAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myAppDelegate.m; sourceTree = "<group>"; };
-		E9969E4614BCA07700F4C861 /* myViewController.h */ = {isa = PBXFileReference; path = myViewController.h; sourceTree = "<group>"; };
-		E9969E4714BCA07700F4C861 /* myViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myViewController.m; sourceTree = "<group>"; };
-		E9969E4A14BCA07700F4C861 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/myViewController.xib; sourceTree = "<group>"; };
+		E9969E4614BCA07700F4C861 /* RootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
+		E9969E4714BCA07700F4C861 /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
+		E9969E4A14BCA07700F4C861 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootController.xib; sourceTree = "<group>"; };
+		E9969E5214BCA18700F4C861 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E9969E5414BCA19400F4C861 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9969E5A14BCC10F00F4C861 /* EarthquakeEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeEntity.h; sourceTree = "<group>"; };
+		E9969E5B14BCC10F00F4C861 /* EarthquakeEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9969E5514BCA19400F4C861 /* MapKit.framework in Frameworks */,
+				E9969E5314BCA18700F4C861 /* CoreLocation.framework in Frameworks */,
 				E9969E3514BCA07700F4C861 /* UIKit.framework in Frameworks */,
 				E9969E3714BCA07700F4C861 /* Foundation.framework in Frameworks */,
 				E9969E3914BCA07700F4C861 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +76,8 @@
 		E9969E3314BCA07700F4C861 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9969E5214BCA18700F4C861 /* CoreLocation.framework */,
+				E9969E5414BCA19400F4C861 /* MapKit.framework */,
 				E9969E3414BCA07700F4C861 /* UIKit.framework */,
 				E9969E3614BCA07700F4C861 /* Foundation.framework */,
 				E9969E3814BCA07700F4C861 /* CoreGraphics.framework */,
@@ -77,11 +88,10 @@
 		E9969E3A14BCA07700F4C861 /* Earthquake */ = {
 			isa = PBXGroup;
 			children = (
+				E9969E5114BCA08700F4C861 /* Classes */,
 				E9969E4314BCA07700F4C861 /* myAppDelegate.h */,
 				E9969E4414BCA07700F4C861 /* myAppDelegate.m */,
-				E9969E4614BCA07700F4C861 /* myViewController.h */,
-				E9969E4714BCA07700F4C861 /* myViewController.m */,
-				E9969E4914BCA07700F4C861 /* myViewController.xib */,
+				E9969E4914BCA07700F4C861 /* RootController.xib */,
 				E9969E3B14BCA07700F4C861 /* Supporting Files */,
 			);
 			path = Earthquake;
@@ -96,6 +106,17 @@
 				E9969E4214BCA07700F4C861 /* Earthquake-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9969E5114BCA08700F4C861 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E9969E4614BCA07700F4C861 /* RootController.h */,
+				E9969E4714BCA07700F4C861 /* RootController.m */,
+				E9969E5A14BCC10F00F4C861 /* EarthquakeEntity.h */,
+				E9969E5B14BCC10F00F4C861 /* EarthquakeEntity.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9969E3F14BCA07700F4C861 /* InfoPlist.strings in Resources */,
-				E9969E4B14BCA07700F4C861 /* myViewController.xib in Resources */,
+				E9969E4B14BCA07700F4C861 /* RootController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +183,8 @@
 			files = (
 				E9969E4114BCA07700F4C861 /* main.m in Sources */,
 				E9969E4514BCA07700F4C861 /* myAppDelegate.m in Sources */,
-				E9969E4814BCA07700F4C861 /* myViewController.m in Sources */,
+				E9969E4814BCA07700F4C861 /* RootController.m in Sources */,
+				E9969E5C14BCC10F00F4C861 /* EarthquakeEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,12 +199,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E9969E4914BCA07700F4C861 /* myViewController.xib */ = {
+		E9969E4914BCA07700F4C861 /* RootController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E9969E4A14BCA07700F4C861 /* en */,
 			);
-			name = myViewController.xib;
+			name = RootController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
