@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9969E3514BCA07700F4C861 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9969E3414BCA07700F4C861 /* UIKit.framework */; };
+		E9969E3714BCA07700F4C861 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9969E3614BCA07700F4C861 /* Foundation.framework */; };
+		E9969E3914BCA07700F4C861 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9969E3814BCA07700F4C861 /* CoreGraphics.framework */; };
+		E9969E3F14BCA07700F4C861 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9969E3D14BCA07700F4C861 /* InfoPlist.strings */; };
+		E9969E4114BCA07700F4C861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E4014BCA07700F4C861 /* main.m */; };
+		E9969E4514BCA07700F4C861 /* myAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E4414BCA07700F4C861 /* myAppDelegate.m */; };
+		E9969E4814BCA07700F4C861 /* myViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E4714BCA07700F4C861 /* myViewController.m */; };
+		E9969E4B14BCA07700F4C861 /* myViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9969E4914BCA07700F4C861 /* myViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9969E3014BCA07700F4C861 /* Earthquake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9969E3414BCA07700F4C861 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E9969E3614BCA07700F4C861 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9969E3814BCA07700F4C861 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9969E3C14BCA07700F4C861 /* Earthquake-Info.plist */ = {isa = PBXFileReference; path = "Earthquake-Info.plist"; sourceTree = "<group>"; };
+		E9969E3E14BCA07700F4C861 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9969E4014BCA07700F4C861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9969E4214BCA07700F4C861 /* Earthquake-Prefix.pch */ = {isa = PBXFileReference; path = "Earthquake-Prefix.pch"; sourceTree = "<group>"; };
+		E9969E4314BCA07700F4C861 /* myAppDelegate.h */ = {isa = PBXFileReference; path = myAppDelegate.h; sourceTree = "<group>"; };
+		E9969E4414BCA07700F4C861 /* myAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myAppDelegate.m; sourceTree = "<group>"; };
+		E9969E4614BCA07700F4C861 /* myViewController.h */ = {isa = PBXFileReference; path = myViewController.h; sourceTree = "<group>"; };
+		E9969E4714BCA07700F4C861 /* myViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myViewController.m; sourceTree = "<group>"; };
+		E9969E4A14BCA07700F4C861 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/myViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9969E2D14BCA07700F4C861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9969E3514BCA07700F4C861 /* UIKit.framework in Frameworks */,
+				E9969E3714BCA07700F4C861 /* Foundation.framework in Frameworks */,
+				E9969E3914BCA07700F4C861 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9969E2514BCA07700F4C861 = {
+			isa = PBXGroup;
+			children = (
+				E9969E3A14BCA07700F4C861 /* Earthquake */,
+				E9969E3314BCA07700F4C861 /* Frameworks */,
+				E9969E3114BCA07700F4C861 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9969E3114BCA07700F4C861 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9969E3014BCA07700F4C861 /* Earthquake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9969E3314BCA07700F4C861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9969E3414BCA07700F4C861 /* UIKit.framework */,
+				E9969E3614BCA07700F4C861 /* Foundation.framework */,
+				E9969E3814BCA07700F4C861 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9969E3A14BCA07700F4C861 /* Earthquake */ = {
+			isa = PBXGroup;
+			children = (
+				E9969E4314BCA07700F4C861 /* myAppDelegate.h */,
+				E9969E4414BCA07700F4C861 /* myAppDelegate.m */,
+				E9969E4614BCA07700F4C861 /* myViewController.h */,
+				E9969E4714BCA07700F4C861 /* myViewController.m */,
+				E9969E4914BCA07700F4C861 /* myViewController.xib */,
+				E9969E3B14BCA07700F4C861 /* Supporting Files */,
+			);
+			path = Earthquake;
+			sourceTree = "<group>";
+		};
+		E9969E3B14BCA07700F4C861 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9969E3C14BCA07700F4C861 /* Earthquake-Info.plist */,
+				E9969E3D14BCA07700F4C861 /* InfoPlist.strings */,
+				E9969E4014BCA07700F4C861 /* main.m */,
+				E9969E4214BCA07700F4C861 /* Earthquake-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9969E2F14BCA07700F4C861 /* Earthquake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9969E4E14BCA07700F4C861 /* Build configuration list for PBXNativeTarget "Earthquake" */;
+			buildPhases = (
+				E9969E2C14BCA07700F4C861 /* Sources */,
+				E9969E2D14BCA07700F4C861 /* Frameworks */,
+				E9969E2E14BCA07700F4C861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Earthquake;
+			productName = Earthquake;
+			productReference = E9969E3014BCA07700F4C861 /* Earthquake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9969E2714BCA07700F4C861 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E9969E2A14BCA07700F4C861 /* Build configuration list for PBXProject "Earthquake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E9969E2514BCA07700F4C861;
+			productRefGroup = E9969E3114BCA07700F4C861 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9969E2F14BCA07700F4C861 /* Earthquake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9969E2E14BCA07700F4C861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9969E3F14BCA07700F4C861 /* InfoPlist.strings in Resources */,
+				E9969E4B14BCA07700F4C861 /* myViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9969E2C14BCA07700F4C861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9969E4114BCA07700F4C861 /* main.m in Sources */,
+				E9969E4514BCA07700F4C861 /* myAppDelegate.m in Sources */,
+				E9969E4814BCA07700F4C861 /* myViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9969E3D14BCA07700F4C861 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9969E3E14BCA07700F4C861 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E9969E4914BCA07700F4C861 /* myViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9969E4A14BCA07700F4C861 /* en */,
+			);
+			name = myViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9969E4C14BCA07700F4C861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9969E4D14BCA07700F4C861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9969E4F14BCA07700F4C861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Earthquake/Earthquake-Prefix.pch";
+				INFOPLIST_FILE = "Earthquake/Earthquake-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E9969E5014BCA07700F4C861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Earthquake/Earthquake-Prefix.pch";
+				INFOPLIST_FILE = "Earthquake/Earthquake-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9969E2A14BCA07700F4C861 /* Build configuration list for PBXProject "Earthquake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9969E4C14BCA07700F4C861 /* Debug */,
+				E9969E4D14BCA07700F4C861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9969E4E14BCA07700F4C861 /* Build configuration list for PBXNativeTarget "Earthquake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9969E4F14BCA07700F4C861 /* Debug */,
+				E9969E5014BCA07700F4C861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9969E2714BCA07700F4C861 /* Project object */;
+}
