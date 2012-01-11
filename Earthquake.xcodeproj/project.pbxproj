@@ -18,6 +18,8 @@
 		E9969E5314BCA18700F4C861 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9969E5214BCA18700F4C861 /* CoreLocation.framework */; };
 		E9969E5514BCA19400F4C861 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9969E5414BCA19400F4C861 /* MapKit.framework */; };
 		E9969E5C14BCC10F00F4C861 /* EarthquakeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E9969E5B14BCC10F00F4C861 /* EarthquakeEntity.m */; };
+		E9D6FFEC14BDC69A00E79B8A /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D6FFEB14BDC69A00E79B8A /* XMLParser.m */; };
+		E9D6FFF114BE06B100E79B8A /* earthquake.png in Resources */ = {isa = PBXBuildFile; fileRef = E9D6FFF014BE06B100E79B8A /* earthquake.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,9 @@
 		E9969E5414BCA19400F4C861 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E9969E5A14BCC10F00F4C861 /* EarthquakeEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeEntity.h; sourceTree = "<group>"; };
 		E9969E5B14BCC10F00F4C861 /* EarthquakeEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeEntity.m; sourceTree = "<group>"; };
+		E9D6FFEA14BDC69A00E79B8A /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		E9D6FFEB14BDC69A00E79B8A /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		E9D6FFF014BE06B100E79B8A /* earthquake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earthquake.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,7 @@
 				E9969E4314BCA07700F4C861 /* myAppDelegate.h */,
 				E9969E4414BCA07700F4C861 /* myAppDelegate.m */,
 				E9969E4914BCA07700F4C861 /* RootController.xib */,
+				E9D6FFF014BE06B100E79B8A /* earthquake.png */,
 				E9969E3B14BCA07700F4C861 /* Supporting Files */,
 			);
 			path = Earthquake;
@@ -115,6 +121,8 @@
 				E9969E4714BCA07700F4C861 /* RootController.m */,
 				E9969E5A14BCC10F00F4C861 /* EarthquakeEntity.h */,
 				E9969E5B14BCC10F00F4C861 /* EarthquakeEntity.m */,
+				E9D6FFEA14BDC69A00E79B8A /* XMLParser.h */,
+				E9D6FFEB14BDC69A00E79B8A /* XMLParser.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 			files = (
 				E9969E3F14BCA07700F4C861 /* InfoPlist.strings in Resources */,
 				E9969E4B14BCA07700F4C861 /* RootController.xib in Resources */,
+				E9D6FFF114BE06B100E79B8A /* earthquake.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +194,7 @@
 				E9969E4514BCA07700F4C861 /* myAppDelegate.m in Sources */,
 				E9969E4814BCA07700F4C861 /* RootController.m in Sources */,
 				E9969E5C14BCC10F00F4C861 /* EarthquakeEntity.m in Sources */,
+				E9D6FFEC14BDC69A00E79B8A /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +304,7 @@
 				E9969E5014BCA07700F4C861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

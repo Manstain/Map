@@ -10,9 +10,32 @@
 
 @implementation EarthquakeEntity
 
-@synthesize title;
+
+@synthesize _title;
 @synthesize latitude;
 @synthesize longtitude;
 @synthesize depth;
+@synthesize date;
+
+- (CLLocationCoordinate2D)coordinate
+{
+    CLLocationCoordinate2D _coordinate = CLLocationCoordinate2DMake(latitude, longtitude);
+    
+    return _coordinate;
+}
+
+- (NSString*)title
+{
+    return _title;
+}
+
+- (void)dealloc
+{
+    [_title release];
+    [depth release];
+    [date release];
+    
+    [super dealloc];
+}
 
 @end

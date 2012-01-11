@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface EarthquakeEntity : NSObject
+@interface EarthquakeEntity : NSObject <MKAnnotation>
 
-@property(nonatomic,retain)    NSString *title;
-@property(nonatomic,retain)    NSString *latitude;
-@property(nonatomic,retain)    NSString *longtitude;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property(nonatomic,retain)    NSString *_title;
+@property(nonatomic,retain)    NSString *date;
+@property(nonatomic)    CGFloat latitude;
+@property(nonatomic)    CGFloat longtitude;
 @property(nonatomic,retain)    NSString *depth;
+@property (nonatomic, readonly, copy) NSString *title;
 
 
 

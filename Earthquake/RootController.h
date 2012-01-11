@@ -8,18 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "XMLParser.h"
 #import <CoreLocation/CoreLocation.h>
 
 #define EARTHQUAKEURL @"http://earthquake.usgs.gov/earthquakes/catalogs/eqs7day-M5.xml"
 
-@interface RootController : UIViewController<CLLocationManagerDelegate,MKMapViewDelegate,NSURLConnectionDataDelegate,NSXMLParserDelegate>
+@interface RootController : UIViewController<CLLocationManagerDelegate,MKMapViewDelegate,NSURLConnectionDataDelegate>
 {
     IBOutlet MKMapView *map;
     CLLocationManager *locationManager;
     NSMutableArray *earthquakes;
     NSURLConnection *connection;
     NSURLRequest *request;
-    NSMutableString *curCharacter;
+    NSMutableData *earthquakesData;
 }
+
+- (void)addAnnotations;
 
 @end

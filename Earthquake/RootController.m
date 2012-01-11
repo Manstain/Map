@@ -43,21 +43,48 @@
 
 - (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views
 {
-    MKAnnotationView *annotationViev = [views objectAtIndex:0];
-    id <MKAnnotation> ma = [annotationViev annotation];
-    
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([ma coordinate], 250, 250);
-    
-    [mapView setRegion:region animated:YES];
+//    MKAnnotationView *annotationViev = [views objectAtIndex:0];
+//    id <MKAnnotation> ma = [annotationViev annotation];
+//    
+//    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([ma coordinate], 250, 250);
+//    
+//    [mapView setRegion:region animated:YES];
     
     
 }
 
-- (void)locationManager:(CLLocationManager *)manager
-	didUpdateToLocation:(CLLocation *)newLocation
-           fromLocation:(CLLocation *)oldLocation
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
+    if ([annotation isKindOfClass:[EarthquakeEntity class]])
+    {
+        static NSString *AnnotationIdentifier = @"AnnotationIdentifier";
+        MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationIdentifier];
+        
+        if (!pinView)
+        {
+            pinView = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationIdentifier] autorelease];
+            pinView.canShowCallout = YES;
+            pinView.animatesDrop = YES;
+        }
+        else
+        {
+            pinView.annotation = annotation;
+        }
+        
+        UIImageView *leftCalloutView = [[UIImageView alloc] 
+                                        initWithImage:[UIImage imageNamed:@"earthquake.png"]];
+        pinView.leftCalloutAccessoryView = leftCalloutView;
+        [leftCalloutView release];
+        
+        return pinView;
+    }
+    
+    return nil;
+}
 
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    earthquakesData = [[NSMutableData alloc]init];
 }
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
@@ -65,29 +92,40 @@
     NSLog(@"%@",error);
 }
 
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    NSXMLParser *doc = [[NSXMLParser alloc]initWithData:earthquakesData];
+    XMLParser *parser = [[XMLParser alloc]init];
+    [doc setDelegate:parser];
+    [doc parse];
+    
+    earthquakes = [parser.earthquaData retain];
+
+    [self addAnnotations];
+    
+    [doc release];
+    [parser release];
+    
+}
+
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    NSXMLParser *doc = [[NSXMLParser alloc]initWithData:data];
-    [doc setDelegate:self];
-    [doc parse];
+    [earthquakesData appendData:data];
 }
 
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
+- (void)addAnnotations
 {
-    
-}
-
-- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
-{
-    
-}
-
-- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
-{
-    if (!curCharacter)
+    for (EarthquakeEntity *curEarthquake in earthquakes)
     {
-        [curCharacter appendFormat:string];
+        [map addAnnotation:curEarthquake];
     }
+}
+
+- (void)dealloc
+{
+    [earthquakesData release];
+    [earthquakes release];
+    [super dealloc];
 }
 
 @end
