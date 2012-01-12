@@ -26,7 +26,15 @@
 
 - (NSString*)title
 {
+    
     return _title;
+}
+
+- (NSString*)subtitle
+{
+    NSString *subtitle = [NSString stringWithFormat:@"Depth: %@, %@",depth,date];
+    
+    return subtitle;
 }
 
 - (void)dealloc

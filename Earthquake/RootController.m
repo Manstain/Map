@@ -64,17 +64,13 @@
         {
             pinView = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationIdentifier] autorelease];
             pinView.canShowCallout = YES;
-            pinView.animatesDrop = YES;
         }
         else
         {
             pinView.annotation = annotation;
         }
         
-        UIImageView *leftCalloutView = [[UIImageView alloc] 
-                                        initWithImage:[UIImage imageNamed:@"earthquake.png"]];
-        pinView.leftCalloutAccessoryView = leftCalloutView;
-        [leftCalloutView release];
+        pinView.image = [UIImage imageNamed:@"earthquake.png"];
         
         return pinView;
     }

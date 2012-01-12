@@ -18,6 +18,7 @@
 @property(nonatomic)    CGFloat longtitude;
 @property(nonatomic,retain)    NSString *depth;
 @property (nonatomic, readonly, copy) NSString *title;
+@property (nonatomic, readonly, copy) NSString *subtitle;
 
 
 
